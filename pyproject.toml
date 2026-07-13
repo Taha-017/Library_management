@@ -1,0 +1,27 @@
+package-mode = false
+
+[project]
+name = "ai-habit-tracker"
+version = "0.1.0"
+description = "AI powered habit tracker"
+authors = [
+    {name = "taha",email = "fahetafaha@gmail.com"}
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy (>=2.5.0,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [
+    { include = "ai_habit_tracker", from = "src" }
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
